@@ -1,0 +1,25 @@
+# Ideas
+
+- Recomendador. Perfil de usuario. Ratings, likes. Qué tipo de usuario sos
+  - Canciones (steam) [Dataset](https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge)
+  - Películas. El DS tiene ratings, tags y categorías [dataset](https://grouplens.org/datasets/movielens/)
+  - Perfiles de twitter
+  - Videojuegos (steam, etc)
+- Reconocimiento de imágenes
+  - Reconocimiento de dígitos (tenemos dataset _mnist_)
+  - Detección de frutas
+  - Reconocimiento de texto
+    - [Completador de captcha](https://www.kaggle.com/datasets/fournierp/captcha-version-2-images)
+- Reconocimiento de audios
+  - Speech emotion recognition
+- Predictor
+  - [Precio de la palta](https://www.kaggle.com/datasets/neuromusic/avocado-prices)
+  - Inflación
+- Juegos
+  - [Predictor de popularidad](https://arxiv.org/abs/2110.02896)
+  - [Predictor de ofertas por semana](https://ai.plainenglish.io/supervised-machine-learning-classification-predicting-possibility-of-steam-game-to-be-on-sale-a0043d0c5ba5)
+  - [Sentiment analysis of reviews](https://core.ac.uk/download/pdf/159108993.pdf)
+  - Recomendador
+- Sentiment Analysis
+  - [Sentiment analysis of reviews](https://core.ac.uk/download/pdf/159108993.pdf)
+  - Likeliness de videos de YT a partir de comentarios de YT y likes
