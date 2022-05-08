@@ -8,6 +8,9 @@ https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?datasetId=3405
 
 ## Recursos de recommender systems
 
+- Content based
+  - Techiques: https://towardsdatascience.com/techniques-for-content-based-recommender-systems-64f812d2b5a0?gi=413ffb7ed62c
+
 - [Tutorial para principiantes](https://www.datacamp.com/community/tutorials/recommender-systems-python)
 
   Tiene un content based de movielens. Buenísimo.
