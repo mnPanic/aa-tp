@@ -30,3 +30,4 @@ https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?datasetId=3405
     - https://github.com/statisticianinstilettos/recmetrics
 
   - Paper: https://www.bgu.ac.il/~shanigu/Publications/EvaluationMetrics.17.pdf
+  - https://towardsdatascience.com/recommendation-systems-models-and-evaluation-84944a84fb8e
