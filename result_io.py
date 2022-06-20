@@ -1,11 +1,22 @@
 from typing import List, Tuple
+import json
 
 NAME_COLLABORATIVE = "collaborative"
 NAME_CONTENT = "content_based"
 
+
+def write_recoms_by_movie(recoms: dict):
+    with open("results/recoms-by-movie.json", 'w') as f:
+        json_str = json.dumps(recoms)
+        f.write(json_str)
+
+def read_recoms_by_movie() -> dict:
+    with open("results/recoms-by-movie.json", 'r') as f:
+        return json.load(f)
+
 def filename(name: str) -> str:
     return f"results/{name}.txt"
-
+                       
 def write_results(name: str, predicted: List[List[str]], actual: List[List[str]]):
     with open(filename(name), 'w') as f:
         f.write(list_list_to_string(predicted)+"\n")
