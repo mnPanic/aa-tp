@@ -1,4 +1,6 @@
 dataset/*
+dfs/*
+
 .ipynb_checkpoints/
 
 __pycache__/
