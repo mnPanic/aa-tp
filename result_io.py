@@ -22,7 +22,14 @@ def write_results(name: str, predicted: List[List[str]], actual: List[List[str]]
         f.write(list_list_to_string(predicted)+"\n")
         f.write(list_list_to_string(actual)+"\n")
 
-def read_results(name: str) -> Tuple[List[List[str]], List[List[str]]]:
+def write_col_result(user_id: int, predicted: list, actual: list):
+    with open(filename(NAME_COLLABORATIVE), 'a') as f:
+        actual_str = list_to_string(actual)
+        pred_str = list_to_string(predicted)
+
+        f.write(f"{user_id}|{pred_str}|{actual_str}\n") 
+
+def read_results(name: str) ->  Tuple[List[List[str]], List[List[str]]]:
     with open(filename(name), 'r') as f:
         content = f.read()
         lines = content.split('\n')
@@ -31,23 +38,59 @@ def read_results(name: str) -> Tuple[List[List[str]], List[List[str]]]:
         
         return predicted, actual
 
+def read_col_results() -> Tuple[List[List[str]], List[List[str]]]:
+    with open(filename(NAME_COLLABORATIVE), 'r') as f:
+        content = f.read()
+        lines = content.rstrip().split('\n')
+        predicted = []
+        actual = []
+        
+        for line in lines:
+            l = line.split('|')
+            # user|predicted|actual
+            pred = parse_list(l[1])
+            act = parse_list(l[2])
+
+            predicted.append(pred)
+            actual.append(act)
+        
+        return predicted, actual
+
+def read_processed_users() -> List[str]:
+    with open(filename(NAME_COLLABORATIVE), 'r') as f:
+        content = f.read()
+        if content == "":
+            print("No processed users")
+            return []
+        lines = content.rstrip().split('\n')
+        users = map(lambda l: int(l.split('|')[0]), lines)
+
+    return list(users)
+    
 def list_list_to_string(ll: List[List[str]]):
     # [["1", "2", "3"], ["4"], ["5"]]
     # 1,2,3|4|5
     line = ""
     for l in ll:
-        for s in l:
-            line += s + ","
-        line = line[:-1]
-        line += "|"
+        line += list_to_string(l) + "|"
     line = line[:-1]
     return line
+
+def list_to_string(l: List[int]):
+    # ["1", "2", "3"]
+    # 1,2,3
+    res = ""
+    for s in l:
+        res += str(s) + ","
+    return res[:-1]
 
 def parse_list_list(line: str):
     raw_lists = line.split('|')
     ll = []
     for raw_list in raw_lists:
-        l = raw_list.split(',')
-        ll.append(l)
+        ll.append(parse_list(raw_list))
        
-    return ll  
+    return ll
+
+def parse_list(s: str) -> list:
+    return s.split(',')
