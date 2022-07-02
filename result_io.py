@@ -3,6 +3,7 @@ import json
 
 NAME_COLLABORATIVE = "collaborative"
 NAME_CONTENT = "content_based"
+NAME_RANDOM = "random"
 
 
 def write_recoms_by_movie(recoms: dict):
