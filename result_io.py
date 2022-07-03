@@ -24,7 +24,7 @@ def write_results(name: str, predicted: List[List[str]], actual: List[List[str]]
         f.write(list_list_to_string(actual)+"\n")
 
 def write_col_result(user_id: int, predicted: list, actual: list):
-    write_results_new_format(NAME_COLLABORATIVE)
+    write_results_new_format(NAME_COLLABORATIVE, user_id, predicted, actual)
     
 def write_results_new_format(name: str, user_id: int, predicted: list, actual: list):
     with open(filename(name), 'a') as f:
