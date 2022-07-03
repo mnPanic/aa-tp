@@ -3,6 +3,7 @@ import json
 
 NAME_COLLABORATIVE = "collaborative"
 NAME_CONTENT = "content_based"
+NAME_CONTENT_SOPA = "content_based_sopa"
 NAME_RANDOM = "random"
 NAME_COLLAB_CLUSTER = "collaborative-clustering"
 
@@ -44,7 +45,10 @@ def read_results(name: str) ->  Tuple[List[List[str]], List[List[str]]]:
         return predicted, actual
 
 def read_col_results() -> Tuple[List[List[str]], List[List[str]]]:
-    with open(filename(NAME_COLLABORATIVE), 'r') as f:
+    return read_results_new_format(NAME_COLLABORATIVE)
+    
+def read_results_new_format(name: str) -> Tuple[List[List[str]], List[List[str]]]:
+    with open(filename(name), 'r') as f:
         content = f.read()
         lines = content.rstrip().split('\n')
         predicted = []
