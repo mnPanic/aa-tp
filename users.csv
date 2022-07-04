@@ -1,0 +1,49 @@
+userId,userName,tmdbId,rating,orig_title
+300001,"manu",12155,4,Alice in Wonderland
+300001,"manu",670,2.5,Oldboy
+300001,"manu",10681,4.5,Wall-E
+300001,"manu",9502,4,Kung fu panda
+300001,"manu",37724,4,Skyfall
+300001,"manu",285,4,Pirates of the Caribbean 1
+300001,"manu",10528,4,Sherlock holmes
+300001,"manu",1726,3.5,Iron man
+300001,"manu",550,5,Fight club
+300001,"manu",11324,4.5,Shutter island
+300001,"manu",27205,5,Inception
+300002,"elias",10269,4,Yentl
+300002,"elias",16085,4,Funny Girl
+300002,"elias",19610,3.5,A Star is Born
+300002,"elias",3537,3.5,Fame
+300002,"elias",10228,4,Pokemon: La pelicula
+300002,"elias",12599,4,Pokemon 2: El poder de uno
+300002,"elias",9833,4,El fantasma de la Opera
+300002,"elias",5528,4.5,Les Choristes
+300002,"elias",350,5,Devil wears Prada
+300002,"elias",1407,4.5,La vie en rose
+300002,"elias",1125,4.5,Dreamgirls
+300002,"elias",2976,4,Hairspray
+300002,"elias",9837,4.5,El príncipe de Egipto
+300002,"elias",8392,5,Mi vecino Totoro
+300002,"elias",671,3.5,Harry Potter y la piedra filosofal
+300002,"elias",672,4,Harry Potter y la cámara secreta
+300002,"elias",673,3.5,Harry Potter y el prisionero de Azkaban
+300002,"elias",674,3.5,Harry Potter y el cáliz de fuego
+300002,"elias",675,4,Harry Potter y la orden del fénix
+300002,"elias",767,4.5,Harry Potter y el misterio del príncipe
+300002,"elias",12444,4.5,Harry Potter y las reliquias de la muerte - Parte 1
+300002,"elias",12445,4.5,Harry Potter y las reliquias de la muerte - Parte 2
+300002,"elias",4935,5,El castillo vagabundo
+300002,"elias",16859,5,Nicky aprendiz de bruja
+300002,"elias",128,5,La princesa Mononoke
+300002,"elias",12429,4.5,Ponyo en el acantilado
+300002,"elias",129,5,El viaje de Chihiro
+300002,"elias",37933,1,Cuentos de Terramar
+300002,"elias",14069,4.5,La chica que saltaba a través del tiempo
+300003,"mati",238,5,godfather
+300003,"mati",278,5,shawnshak redemption
+300003,"mati",11324,5,shutter island
+300003,"mati",77,5,memento
+300003,"mati",334,5,magnolia
+300003,"mati",424,5,schindler list
+300003,"mati",680,5,pulp fiction
+300003,"mati",37165,5,the truman show
