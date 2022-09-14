@@ -2,6 +2,8 @@
 
 Trabajo práctico de Aprendizaje Automático
 
+[Link a la presentación en YouTube](https://www.youtube.com/watch?v=RI9HNzN2EqM)
+
 ## Películas
 
 https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?datasetId=3405
